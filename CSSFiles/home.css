@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container::before {
+    content: "";
+    background: url(../Pictures/classic.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container {
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 44vh;
+    width: 100%;
+    padding: 0;
+    /* padding-bottom: 4px; */
+}
+
+#one {
+    justify-content: center;
+    height: 51vh;
+}
+
+#head,
+#decesnd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid hotpink; */
+    margin: 20px 32px;
+    margin-top: 10px;
+    padding: 25px 77px;
+    font-family: 'Cinzel', serif;
+}
+
+#head {
+    padding: 10px 77px;
+    margin: 30px 50px;
+    margin-bottom: 9px;
+}
+
+#head h1 {
+    margin: 20px 15px;
+    font-size: 50px;
+    color: rgb(90 67 20);
+    text-shadow: 1px 1px 1px rgb(76, 56, 17);
+}
+
+#decesnd {
+    padding: 25px;
+    padding-top: 5px;
+    margin: 21px;
+    color: rgb(76, 56, 17);
+    font-weight: bolder;
+    height: 0%;
+    margin-top: 10px;
+}
+
+.para {
+    /* border: 2px solid firebrick; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    color: linear;
+
+}
+
+.para p {
+    margin: 4px;
+}
+
+.swiper {
+    height: 45vh;
+    width: 85%;
+}
+
+.content {
+    display: flex;
+    /* border: 2px solid forestgreen; */
+    height: 45vh;
+    width: 87%;
+    margin: 0px 25px;
+    padding: 0px 20px;
+    justify-content: center;
+    /* padding-bottom: 15px; */
+}
+
+/* .swiper-wrapper {
+    border: 2px solid rgb(42, 43, 40);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 90%;
+} */
+
+.joker {
+    /* border: 2px solid fuchsia; */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 38vh;
+    background-color: #181817fa;
+}
+
+.img-content {
+    /* border: 2px solid teal; */
+    height: 20vh;
+    display: block;
+}
+
+.img-content img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    /* border: 2px solid rebeccapurple; */
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin: 0 10px;
+}
+
+.card-content h4 {
+    margin-top: 0px;
+    padding-top: 2px;
+    margin-bottom: 3px;
+}
+
+.card-content p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.buttons {
+    margin: 2px;
+    padding: 2px;
+}
+
+.deco {
+    height: 28px;
+    width: 100px;
+    border-radius: 5px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.deco:hover {
+    background-color: rgb(128, 118, 118);
+    cursor: pointer;
+}
+
+.deco a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 808px) {
+    #head h1 {
+        font-size: 45px;
+    }
+    .container::before{
+        background: url(../Pictures/classic1.jpg) no-repeat center center/cover;
+    }
+}
+
+@media (max-width: 758px) {
+    #head h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 710px) {
+    #head h1 {
+        font-size: 35px;
+    }
+
+    .para {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 651px) and (min-width: 528px) {
+    #head {
+        padding: 10px 77px;
+        margin: 2px 50px;
+        margin-bottom: 32px;
+    }
+
+    #head h1 {
+        margin: -5px 59px 25px 166px;
+        padding: 0px 22px;
+        font-size: 32px;
+        width: 100%;
+        margin-left: 109px;
+    }
+
+    .para {
+        font-size: inherit;
+    }
+
+    #decesnd {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 527px) {
+    #head h1{
+        font-size: 28px;
+        width: 100%;
+        display: block;
+        padding: 0 53px;
+        margin: 4px 26px;
+        padding-left: 65px;
+    }
+}
+
+@media (max-width: 461px) {
+    .para{
+        font-size: 15px;
+    padding: 10px 0px;
+    }
+}
+
+@media (max-width: 461px)and (min-width:345px){
+    #decesnd {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 345px){
+    #decesnd {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+@media (max-width: 333px){
+    #decesnd {
+        width: 100%;
+        font-size: 13px;
+    }
+    #head{
+        scale: 85%;
+    }
+}
